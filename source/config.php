@@ -8,7 +8,7 @@ $database = array(
 );
 $path = array(
    'MainCSS' => '',
-   'nav' => '';
+   'nav' => '',
  );
 $config = array(
    'pathto' => $path,
