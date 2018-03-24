@@ -6,6 +6,8 @@ $lang_en = array(
    'id' => "en",
    'index_CommingSoon' => 'RubiconWeb Comming Soon',
    'main_copyright' => 'Copyright (c) 2018 lucsoft All Rights Reserved.',
+   '404_title' => 'Unknown file Error: 404',
+   '404_description' => 'The Monkeys couldn\'t help with youre quest: '
 );
 $lang_de = array(
    'activ' => true,
@@ -15,9 +17,9 @@ $lang_de = array(
    'main_HelloWorld' => 'Hallo Welt, I bims',
    'index_CommingSoon' => 'RubiconWeb wird demnächst erscheinen',
    'main_copyright' => 'Copyright (c) 2018 lucsoft Alle Rechte vorbehalten.',
-   '404_unknown' => 'Unbekannte Detei!',
-   '404_monkeys' => 'Unsere Affen könnten ihren antrag nicht finden: ',
-   '404_lang' => 'Sprache vom Browser: '
+   '404_title' => 'Unbekannte Detei Error: 404',
+   '404_description' => 'Unsere Affen können nichts mit Diesen Abfrage   tun: ',
+
 );
 
 $lang = array(
@@ -25,26 +27,18 @@ $lang = array(
    'en' => $lang_en,
    'defaultLang' => "de",
    'setDefaultLang' => function($langlist)
-   {
-       $langlist = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
-      $config = include 'config.php';
-       $lang = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
-       $supportedlang = false;
-
-       for ($langitem=0; $langitem < count($lang); $langitem++) {
-          if ($config["language"][$lang[$langitem]]["activ"]) {
-            $supportedlang = true;
-            $lang = $config["language"][$lang[$langitem]]["id"];
-            break;
-          }
-       }
-      if (!$supportedlang) {
-         $supportedlang = "de";
-         $supportedlang = true;
+      {
+         $langlist = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
+         $config = include 'config.php';
+         $lang = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
+         for ($langitem=0; $langitem < count($lang); $langitem++) {
+            if ($config["language"][$lang[$langitem]]["activ"]) {
+               $lang = $config["language"][$lang[$langitem]]["id"];
+               break;
+               }
+         }
+         return $config["language"][$lang];
       }
-      return $config["language"][$lang];
-
-   }
 );
 return $lang;
  ?>

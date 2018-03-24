@@ -11,11 +11,11 @@ $path = array(
    'MainCSS' => '',
    'nav' => '',
  );
-$config = array(
-   'pathto' => $path,
-   'database' => $database,
-   'language' => include './config/language.php'
-);
+     $config = array(
+       'pathto' => $path,
+       'database' => $database,
+       'language' => include '/www/htdocs/w01372d4/rubicon.lucsoft.de/source/config/language.php'
+     );
 
 return $config;
  ?>
