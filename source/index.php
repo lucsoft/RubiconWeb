@@ -6,7 +6,7 @@ $lang = $config["language"]["setDefaultLang"]("");
 <html>
  <head>
   <meta charset="utf-8">
-  <title>RubiconBot - Comming Soon</title>
+  <title>RubiconBot - Coming Soon</title>
  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500|Quicksand:300,400,500,700" rel="stylesheet">
  <style media="screen">
     html {
@@ -37,7 +37,7 @@ $lang = $config["language"]["setDefaultLang"]("");
 
 
 
-    print "<h1>" . $lang['index_CommingSoon']. "</h1>";
+    print "<h1>" . $lang['index_ComingSoon']. "</h1>";
 
     ?>
    <footer>
