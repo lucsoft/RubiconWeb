@@ -37,7 +37,7 @@ $lang = $config["language"]["setDefaultLang"]("");
 
 
 
-    print "<h1>" . $lang['index_ComingSoon']. "</h1>";
+    print "<h1>" . $lang['index_title']. "</h1>";
 
     ?>
    <footer>
