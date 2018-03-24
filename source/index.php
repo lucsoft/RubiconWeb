@@ -1,6 +1,6 @@
 <?php
 $config = include 'config.php';
- $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+$lang = $config["language"]["setDefaultLang"]("");
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,7 +19,6 @@ $config = include 'config.php';
       top: 25%;
       left: 0%;
       text-align: center;
-
       right: 0%;
    }
    h1 {
@@ -35,12 +34,14 @@ $config = include 'config.php';
  </head>
  <body>
     <?php
-    print "Browser-Supported-Language: " . $lang;
-    if ($config["language"][$lang]["activ"] == true) {
-      print "<h1>" . $config["language"][$lang]['index_CommingSoon']. "</h1>";
-    } ?>
+
+
+
+    print "<h1>" . $lang['index_CommingSoon']. "</h1>";
+
+    ?>
    <footer>
-    Copyright (c) 2018 lucsoft All Rights Reserved.
+    <?php print $lang['main_copyright'] ?>
    </footer>
 
  </body>
