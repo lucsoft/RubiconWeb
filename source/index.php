@@ -1,3 +1,7 @@
+<?php
+$config = include 'config.php';
+ $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+?>
 <!DOCTYPE html>
 <html>
  <head>
@@ -7,29 +11,37 @@
  <style media="screen">
     html {
       font-family: 'Roboto';
+      color: white;
       background: rgb(17, 17, 17);
    }
    h1, footer {
       position: fixed;
       top: 25%;
-      left: 50%;
-      transform: translate(-50%,-50%);
+      left: 0%;
+      text-align: center;
+
+      right: 0%;
    }
    h1 {
+      width: 100%;
       font-weight: 300;
       font-size: 3rem;
    }
    footer {
       font-weight: 500;
-      margin-top: 5rem;
+      margin-top: 6rem;
    }
  </style>
  </head>
  <body>
-
-   <h1 style="color: white">RubiconWeb Comming Soon</h1>
-   <footer style="color: white">
+    <?php
+    print "Browser-Supported-Language: " . $lang;
+    if ($config["language"][$lang]["activ"] == true) {
+      print "<h1>" . $config["language"][$lang]['index_CommingSoon']. "</h1>";
+    } ?>
+   <footer>
     Copyright (c) 2018 lucsoft All Rights Reserved.
    </footer>
+
  </body>
 </html>
