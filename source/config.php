@@ -6,6 +6,7 @@ $database = array(
    'host' => '',
    'name' => '',
 );
+
 $path = array(
    'MainCSS' => '',
    'nav' => '',
@@ -13,6 +14,7 @@ $path = array(
 $config = array(
    'pathto' => $path,
    'database' => $database,
+   'language' => include './config/language.php'
 );
 
 return $config;
