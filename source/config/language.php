@@ -29,12 +29,12 @@ $lang = array(
    'setDefaultLang' => function($langlist)
       {
          $langlist = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
-         $config = include 'config.php';
-         $lang = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
-         for ($langitem=0; $langitem < count($lang); $langitem++) {
-            if ($config["language"][$lang[$langitem]]["active"]) {
-               $lang = $config["language"][$lang[$langitem]]["id"];
-               break;
+         $config = include '/www/htdocs/w01372d4/rubicon.lucsoft.de/source/config.php';
+         $lang = "";
+         for ($langitem=0; $langitem < count($langlist); $langitem++) {
+            if ($config["language"][$langlist[$langitem]]["active"]) {
+               $lang = $config["language"][$langlist[$langitem]]["id"];
+
             }
          }
          return $config["language"][$lang];
