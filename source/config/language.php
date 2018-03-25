@@ -4,6 +4,9 @@ $lang_en = array(
    'active' => true,
    'name' => "English",
    'id' => "en",
+
+   'index_nojs' => 'Please activate javascript in your browser! <a href="https://www.enable-javascript.com/" target="_blank">Enable Now!</a>',
+   'nav_docs' => 'Documentation',
    'index_title' => 'RubiconWeb Coming Soon',
    'main_copyright' => 'Copyright (c) 2018 lucsoft All Rights Reserved.',
    '404_title' => 'Unknown file Error: 404',
@@ -14,6 +17,8 @@ $lang_de = array(
    'name' => "Deutsch",
    'id' => "de",
 
+   'nojs' => 'Bitte aktivieren sie Javascript in ihrem Browser! <a href="https://www.enable-javascript.com/" target="_blank">Jetzt Aktiviren</a>',
+   'nav_docs' => 'Dokumentation',
    'main_HelloWorld' => 'Hallo Welt, I bims',
    'index_title' => 'RubiconWeb wird demnächst erscheinen',
    'main_copyright' => 'Copyright (c) 2018 lucsoft Alle Rechte vorbehalten.',

@@ -1,0 +1,55 @@
+body.gray .popup {
+   display: block;
+   margin: 4rem;
+   margin-left: 0rem;
+   color: black;
+   max-width: 500px;
+   min-height: 200px;
+   position: relative;
+   transform: translate(-50%);
+   left: 50%;
+   padding: 2rem;
+   border-radius: 0.4rem;
+   overflow: hidden;
+   background: rgba(255, 255, 255, 0.8);
+}
+body.gray .popup .popup-title {
+   font-size: 1.3rem;
+   display: block;
+   margin: -2rem;
+   color: rgb(54, 54, 54);
+   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.04);
+   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+
+   padding: 0.7rem;
+   padding-left: 2rem;
+   margin-bottom: 1.5rem;
+}
+body.gray .popup .popup-subtitle {
+   color: rgba(0, 0, 0, 0.5);
+   margin-bottom: 0.3rem;
+   display: block;
+}
+input:focus {
+   outline: none;
+}
+body.gray .popup input {
+   display: block;
+   width: calc(100% - 1rem);
+   margin: 0;
+   margin-bottom: 0.8rem;
+   padding: .5rem;
+   border-radius: 0.3rem;
+
+   right: 0;
+   border: none;
+   box-shadow: 0px 0px 0.1rem 0px rgba(0, 0, 0, 0.3);
+}
+body.gray .popup input[type=button] {
+   width: calc(100%);
+}
+body.gray .popup input.discord {
+   background: rgb(37, 115, 180);
+   color: white;
+   padding: 0.7rem;
+}

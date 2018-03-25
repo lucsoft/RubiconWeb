@@ -1,4 +1,14 @@
-body.grey {
+/*
+
+╔═╗╔═╗╔╦╗╔═╗  ╦ ╦╦═╗╦═╗╦╔╦╗╔═╗╔╗╔
+║  ║ ║ ║║║╣   ║║║╠╦╝╠╦╝║ ║ ║╣ ║║║
+╚═╝╚═╝═╩╝╚═╝  ╚╩╝╩╚═╩╚═╩ ╩ ╚═╝╝╚╝
+          ╔╗ ╦ ╦  ╦  ╦ ╦╔═╗╔═╗╔═╗╔═╗╔╦╗
+          ╠╩╗╚╦╝  ║  ║ ║║  ╚═╗║ ║╠╣  ║
+          ╚═╝ ╩   ╩═╝╚═╝╚═╝╚═╝╚═╝╚   ╩
+
+*/
+body.gray {
    background: rgba(0, 0, 0, 0.91);
    font-family: 'Roboto';
    color: white;
@@ -7,7 +17,7 @@ body.grey {
    padding: 0;
    margin: 0;
 }
-body.grey .legalnote {
+body.gray .legalnote {
    position: fixed;
    bottom: 0.5rem;
    margin-top: -0.5rem;
@@ -15,21 +25,43 @@ body.grey .legalnote {
    font-size: 0.7rem;
    color: rgba(255, 255, 255, 0.14);
 }
-body.grey .legalnote .more {
+body.gray .legalnote .more {
    font-size: 0.5rem;
    line-height: 1rem;
    margin-right: 0.3rem;
-
+   transition: all 125ms ease;
    display: inline-block;
    position: relative;
    color: rgba(255, 255, 255, 0.21);
 }
-body.grey .legalnote .more:hover {
+body.gray .legalnote .more:hover {
       color: rgba(255, 255, 255, 0.3);
 }
+
+noscript {
+   border: solid rgba(236, 67, 67, 0.26) 1px;
+
+   padding: 0.8rem;
+   padding-left: 1.2rem;
+   margin: 0.5rem;
+   background: rgba(181, 14, 14, 0.51);
+   border-radius: 0.2rem;
+   position: relative;
+   display: block;
+   transition: all 90ms ease;
+}
+noscript:hover {
+   background: rgba(181, 14, 14, 0.53);
+}
+
+a {
+   color: white;
+
+}
+
+
 nav {
    position: relative;
-   top:0;
    left: 0;
    width: 100%;
    right: 0;
@@ -39,10 +71,9 @@ nav {
 }
 nav ul {
    max-width: 1000px;
-       position: relative;
-       left: 50%;
-       transform: translate(-50%);
-
+   position: relative;
+   left: 50%;
+   transform: translate(-50%);
    padding: 0;
    margin: 0;
    list-style: none;
@@ -50,10 +81,16 @@ nav ul {
    justify-content:space-around;
 }
 nav ul li {
-   color: rgba(255, 255, 255, 0.89);
+   color: rgba(255, 255, 255, 0.7);
    padding: 0.8rem;
    float: left;
+   transition: all 125ms ease;
 }
+nav ul li:hover {
+   color: rgba(255, 255, 255, 1);
+}
+
+
 
 .hidemeproxy {
     position: relative !important;
