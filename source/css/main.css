@@ -1,0 +1,60 @@
+body.grey {
+   background: rgba(0, 0, 0, 0.91);
+   font-family: 'Roboto';
+   color: white;
+   font-family: 'Roboto';
+   font-weight: 300;
+   padding: 0;
+   margin: 0;
+}
+body.grey .legalnote {
+   position: fixed;
+   bottom: 0.5rem;
+   margin-top: -0.5rem;
+   left: 0.8rem;
+   font-size: 0.7rem;
+   color: rgba(255, 255, 255, 0.14);
+}
+body.grey .legalnote .more {
+   font-size: 0.5rem;
+   line-height: 1rem;
+   margin-right: 0.3rem;
+
+   display: inline-block;
+   position: relative;
+   color: rgba(255, 255, 255, 0.21);
+}
+body.grey .legalnote .more:hover {
+      color: rgba(255, 255, 255, 0.3);
+}
+nav {
+   position: relative;
+   top:0;
+   left: 0;
+   width: 100%;
+   right: 0;
+   padding: 0;
+   margin: 0;
+   display: inline-block;
+}
+nav ul {
+   max-width: 1000px;
+       position: relative;
+       left: 50%;
+       transform: translate(-50%);
+
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   display: flex;
+   justify-content:space-around;
+}
+nav ul li {
+   color: rgba(255, 255, 255, 0.89);
+   padding: 0.8rem;
+   float: left;
+}
+
+.hidemeproxy {
+    position: relative !important;
+}

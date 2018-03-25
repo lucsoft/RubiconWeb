@@ -34,10 +34,10 @@ $lang = array(
          for ($langitem=0; $langitem < count($langlist); $langitem++) {
             if ($config["language"][$langlist[$langitem]]["active"]) {
                $lang = $config["language"][$langlist[$langitem]]["id"];
-
+               return $config["language"][$lang];
             }
          }
-         return $config["language"][$lang];
+         return $config["language"][$config['language']["defaultLang"]];
       }
 );
 return $lang;
