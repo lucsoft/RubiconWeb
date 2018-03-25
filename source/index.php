@@ -10,6 +10,7 @@ $lang = $config["language"]["setDefaultLang"]("");
  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,100|Quicksand:300,400,500,700" rel="stylesheet">
  <link rel="stylesheet" href="https://rubicon.lucsoft.de/source/css/main.css">
  <link rel="stylesheet" href="https://rubicon.lucsoft.de/source/css/index.css">
+ <?php include 'https://rubicon.lucsoft.de/source/content/module_header.php?page=' . urlencode("RubiconWeb: Home"); ?>
  </head>
  <body class="grey">
     <nav>
