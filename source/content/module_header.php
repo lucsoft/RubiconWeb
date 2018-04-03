@@ -3,7 +3,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="shortcut icon" href="https://rubicon.lucsoft.de/img/icon_mini.ico">
-<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.4"></script>
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="article">
 <meta property="og:title" content="<?php print $_GET['page']; ?>">

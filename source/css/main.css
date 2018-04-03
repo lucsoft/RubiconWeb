@@ -10,6 +10,7 @@
 */
 body.gray {
    background: rgba(0, 0, 0, 0.91);
+
    font-family: 'Roboto';
    color: white;
    font-family: 'Roboto';
@@ -18,12 +19,16 @@ body.gray {
    margin: 0;
 }
 body.gray .legalnote {
-   position: fixed;
+   position: relative;
    bottom: 0.5rem;
    margin-top: -0.5rem;
    left: 0.8rem;
+   z-index: 10;
    font-size: 0.7rem;
    color: rgba(255, 255, 255, 0.14);
+}
+body.gray .legalnote.fixed {
+   position: fixed;
 }
 body.gray .legalnote .more {
    font-size: 0.5rem;
@@ -37,7 +42,22 @@ body.gray .legalnote .more {
 body.gray .legalnote .more:hover {
       color: rgba(255, 255, 255, 0.3);
 }
-
+.note-disabled {
+   border: solid rgba(255, 201, 9, 0.26) 1px;
+   padding: 0.8rem;
+   padding-left: 1.2rem;
+   margin: 0.5rem;
+   background: rgba(214, 206, 17, 0.74);
+   border-radius: 0.2rem;
+   position: relative;
+   display: block;
+   transition: all 80ms ease 0.5s;
+   opacity: 1;
+}
+.note-disabled.hide {
+   opacity: 0;
+   margin-bottom: -3.4rem;
+}
 noscript {
    border: solid rgba(236, 67, 67, 0.26) 1px;
 

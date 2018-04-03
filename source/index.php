@@ -25,6 +25,6 @@
           </ul>
        </nav>
        <span class="title"><?php print $lang['index_title']; ?></span>
-       <span class="legalnote"><span class="more">IMPRINT & PRIVACY POLICY</span><?php print $lang['main_copyright'] ?></span>
+       <span class="legalnote fixed"><span class="more">IMPRINT & PRIVACY POLICY</span><?php print $lang['main_copyright'] ?></span>
     </body>
 </html>

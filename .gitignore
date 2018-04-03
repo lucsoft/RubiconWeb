@@ -1,2 +1,3 @@
 .ftpconfig
 source/config.php
+source/.htaccess
