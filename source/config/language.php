@@ -14,7 +14,7 @@ $lang_en = array(
    'index_title' => 'RubiconWeb Coming Soon',
    'main_copyright' => 'Copyright (c) 2018 lucsoft All Rights Reserved.',
    '404_title' => 'Unknown file: Error 404',
-   '404_description' => 'The Monkeys couldn\'t help with your quest: '
+   '404_description' => 'The Monkeys couldn\'t help with your request: '
 );
 $lang_de = array(
    'active' => true,
@@ -30,7 +30,7 @@ $lang_de = array(
    'index_title' => 'RubiconWeb wird demnächst erscheinen',
    'main_copyright' => 'Copyright (c) 2018 lucsoft Alle Rechte vorbehalten.',
    '404_title' => 'Unbekannte Datei: Error 404',
-   '404_description' => 'Unsere Affen können nichts mit dieser Reqeust anfangen: ',
+   '404_description' => 'Unsere Affen können nichts mit diesem Reqeust anfangen: ',
 
 );
 
