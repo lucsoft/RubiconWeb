@@ -55,8 +55,7 @@ if ($_GET['type'] == "logout") {
 
          if ($item['Id'] == $user['id']) {
             if (!$item['isAllowed']) {
-               echo "Not Allowed!";
-               echo "<a href=\"https://rubicon.lucsoft.de/source/content/support.php?type=LoginNotAllowed&user=" . $item['Id']."\">Click here to get Support!</a>";
+               header("Location: https://rubicon.lucsoft.de/source/pages/AdvancedMonitoring.php?error=nopermission&user". $user['id']);
                exit();
             }
             function String2Hex($string){
@@ -96,9 +95,7 @@ if ($_GET['type'] == "logout") {
             }
          }
       }
-
-      echo "Wir konnten dich leider nicht finden!";
-      echo "<a href=\"https://rubicon.lucsoft.de/source/content/support.php?type=LoginCantFind&user=" . $user['id']."\">Click here to get Support!</a>";
+      header("Location: https://rubicon.lucsoft.de/source/pages/AdvancedMonitoring.php?error=cantfind&user". $user['id']);
       exit();
    }
 

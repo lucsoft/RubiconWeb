@@ -20,6 +20,7 @@ $lang_de = array(
    'active' => true,
    'name' => "Deutsch",
    'id' => "de",
+   'error_nopermission' => "Entschuldigung! In unsere Datenbank haben Sie nicht das Recht sich beim Advanced Monitoring anzumelden! <a href=\"%LINK%\" target=\"_blank\">Hier gehts zum Support!</a>",
    'button_logout' => 'Abmelden',
    'button_login' => 'Anmelden',
    'button_loginDiscord' => 'mit Discord Anmelden',
